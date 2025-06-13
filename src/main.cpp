@@ -1,6 +1,14 @@
 #include <iostream>
+#include <memory>
+#include <string>
+
+#include "webserver.h"
+#include "database.h"
 
 class RAGChatbot {
+    private:
+        std::unique_ptr<WebServer> webserver;
+        std::unique_ptr<Database> database;
     public:
     // Constructor
     RAGChatbot() {

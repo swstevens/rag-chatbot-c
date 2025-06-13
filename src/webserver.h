@@ -6,18 +6,12 @@ public:
     }
 
     // Method to start the web server
-    bool start() {
-        // Logic to start the web server can be implemented here
-        return true;
-    }
+    bool start();
 
     // Method to stop the web server
-    void stop() {
-        // Logic to stop the web server can be implemented here
-    }
-
+    void stop();
     // Destructor
-    ~WebServer() {
-        // Cleanup code can go here
-    }
+    ~WebServer();
+private:
+    int port;
 };
